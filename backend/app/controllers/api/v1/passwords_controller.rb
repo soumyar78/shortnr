@@ -13,7 +13,7 @@ class Api::V1::PasswordsController < ApplicationController
 
     # Return same generic response to prevent email enumeration
     render json: {
-      message: "If that email address exists in our system, we have sent instructions to reset your password."
+      message: "If that email address exists in our system, we have sent instructions to reset your password. Please check your inbox and spam folder."
     }, status: :ok
   end
 

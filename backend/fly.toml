@@ -21,3 +21,6 @@ primary_region = 'ewr'
   memory = '512mb'
   cpus = 1
   memory_mb = 512
+
+[deploy]
+  release_command = "bundle exec rails db:migrate"
